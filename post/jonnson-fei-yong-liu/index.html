@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Jonnson 费用流 | Prutekoi&#39;s blog</title>
+<title>Jonnson 费用流 | zhang-bokai&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://prutekoi.github.io/favicon.ico?v=1598356167048">
+<link rel="shortcut icon" href="https://zhang-bokai.github.io/favicon.ico?v=1598356167048">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://prutekoi.github.io/styles/main.css">
+<link rel="stylesheet" href="https://zhang-bokai.github.io/styles/main.css">
 
 
   
@@ -44,9 +44,9 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://prutekoi.github.io">
-        <img src="https://prutekoi.github.io/images/avatar.png?v=1598356167048" class="site-logo">
-        <h1 class="site-title">Prutekoi&#39;s blog</h1>
+      <a class="site-title-container" href="https://zhang-bokai.github.io">
+        <img src="https://zhang-bokai.github.io/images/avatar.png?v=1598356167048" class="site-logo">
+        <h1 class="site-title">zhang-bokai&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
         <div class="line"></div>
@@ -98,7 +98,7 @@
       
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://prutekoi.github.io/atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhang-bokai.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -114,7 +114,7 @@
               <p>众所周知SPFA死了。WC2019的课件中给出了对SPFA的各种hack。<br>
 那么费用流也不能好好用SPFA了qwq。</p>
 <p>首先我们知道有一个johnson最短路是可以对带负权的图进行改造使得它可以跑dijk。考虑借鉴这个算法。</p>
-<p>假设一开始的图费用都是正的，我们就可以直接跑dijk。可是一次增广之后有些边反向了qwq。那么我们还是考虑维护一个势 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>[</mo><mo>]</mo></mrow><annotation encoding="application/x-tex">h[]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mclose">]</span></span></span></span>。结论是每次 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>+</mo><mo>=</mo><mi>d</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">h[i]+=dis[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mord">+</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span> 即可。证明：<img src="https://prutekoi.github.io/post-images/1578653704566.png" alt="" loading="lazy"><br>
+<p>假设一开始的图费用都是正的，我们就可以直接跑dijk。可是一次增广之后有些边反向了qwq。那么我们还是考虑维护一个势 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>[</mo><mo>]</mo></mrow><annotation encoding="application/x-tex">h[]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mclose">]</span></span></span></span>。结论是每次 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>+</mo><mo>=</mo><mi>d</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">h[i]+=dis[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mord">+</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span> 即可。证明：<img src="https://zhang-bokai.github.io/post-images/1578653704566.png" alt="" loading="lazy"><br>
 代码：</p>
 <pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
 #define LL long long
@@ -187,7 +187,7 @@ int main(){
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://prutekoi.github.io/post/ban-ping-mian-jiao/">
+                <a href="https://zhang-bokai.github.io/post/ban-ping-mian-jiao/">
                   <h3 class="post-title">
                     计算几何板子
                   </h3>
@@ -235,9 +235,9 @@ var app = new Vue({
       var gitalk = new Gitalk({
         clientID: '7d25e626199673e220e3',
         clientSecret: '18275839c46c0e4e748c553c6a30d28aca3f634a',
-        repo: 'Prutekoi.github.io',
-        owner: 'Prutekoi',
-        admin: ['Prutekoi'],
+        repo: 'zhang-bokai.github.io',
+        owner: 'zhang-bokai',
+        admin: ['zhang-bokai'],
         id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
       })

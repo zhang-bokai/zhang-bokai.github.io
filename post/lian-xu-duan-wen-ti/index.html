@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" >
 
-<title>连续段问题 | Prutekoi&#39;s blog</title>
+<title>连续段问题 | zhang-bokai&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://prutekoi.github.io/favicon.ico?v=1598356167048">
+<link rel="shortcut icon" href="https://zhang-bokai.github.io/favicon.ico?v=1598356167048">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://prutekoi.github.io/styles/main.css">
+<link rel="stylesheet" href="https://zhang-bokai.github.io/styles/main.css">
 
 
   
@@ -44,9 +44,9 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://prutekoi.github.io">
-        <img src="https://prutekoi.github.io/images/avatar.png?v=1598356167048" class="site-logo">
-        <h1 class="site-title">Prutekoi&#39;s blog</h1>
+      <a class="site-title-container" href="https://zhang-bokai.github.io">
+        <img src="https://zhang-bokai.github.io/images/avatar.png?v=1598356167048" class="site-logo">
+        <h1 class="site-title">zhang-bokai&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
         <div class="line"></div>
@@ -98,7 +98,7 @@
       
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://prutekoi.github.io/atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhang-bokai.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -367,7 +367,7 @@ int main(){
 }
 </code></pre>
 <p>关于这个数据结构维护，有两种思路。本代码是上面“离线做法”中的那种思路，即维护生成子图中的边数的思路。这样较简单。传统的做法中是根据连续段 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>max</mi><mo>⁡</mo><mo>{</mo><msub><mi>a</mi><mi>l</mi></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>a</mi><mi>r</mi></msub><mo>}</mo><mo>−</mo><mi>min</mi><mo>⁡</mo><mo>{</mo><msub><mi>a</mi><mi>l</mi></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>a</mi><mi>r</mi></msub><mo>}</mo><mo>−</mo><mo>(</mo><mi>r</mi><mo>−</mo><mi>l</mi><mo>)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\max\{a_l...a_r\}-\min\{a_l...a_r\}-(r-l)=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 的性质，维护这个值的最小值。还需要用两个单调栈辅助修改，比较麻烦。<br>
-<img src="https://prutekoi.github.io/post-images/1585537608058.png" alt="" loading="lazy"><br>
+<img src="https://zhang-bokai.github.io/post-images/1585537608058.png" alt="" loading="lazy"><br>
 三种做法切爆此题hhh</p>
 <p>还有一些性质...析点的儿子个数至少 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 个（否则不可能满足析点的性质），且儿子个数大于等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 个的析点都有可能存在（2,4,6...n,1,3,5...或 4,6,8...n-1,1,3,5...n,2）。</p>
 <p>然后给一些资料的链接吧。<a href="https://blog.csdn.net/qq_35950004/article/details/95346869">构建非排列的析合树</a>，<a href="https://loj.ac/problem/6632">用到析合树的生成函数题/jk</a>，<a href="https://codeforces.com/contest/997/problem/E">构建析合树的数据结构维护部分（前置技能）</a>，<a href="https://blog.csdn.net/weixin_30487317/article/details/99364236"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 构建的方法</a></p>
@@ -377,7 +377,7 @@ int main(){
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://prutekoi.github.io/post/hen-niu-bi-de-jing-li/">
+                <a href="https://zhang-bokai.github.io/post/hen-niu-bi-de-jing-li/">
                   <h3 class="post-title">
                     很牛逼的经历
                   </h3>
@@ -425,9 +425,9 @@ var app = new Vue({
       var gitalk = new Gitalk({
         clientID: '7d25e626199673e220e3',
         clientSecret: '18275839c46c0e4e748c553c6a30d28aca3f634a',
-        repo: 'Prutekoi.github.io',
-        owner: 'Prutekoi',
-        admin: ['Prutekoi'],
+        repo: 'zhang-bokai.github.io',
+        owner: 'zhang-bokai',
+        admin: ['zhang-bokai'],
         id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
       })

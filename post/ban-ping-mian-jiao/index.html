@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" >
 
-<title>计算几何板子 | Prutekoi&#39;s blog</title>
+<title>计算几何板子 | zhang-bokai&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://prutekoi.github.io/favicon.ico?v=1598356167048">
+<link rel="shortcut icon" href="https://zhang-bokai.github.io/favicon.ico?v=1598356167048">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://prutekoi.github.io/styles/main.css">
+<link rel="stylesheet" href="https://zhang-bokai.github.io/styles/main.css">
 
 
   
@@ -44,9 +44,9 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://prutekoi.github.io">
-        <img src="https://prutekoi.github.io/images/avatar.png?v=1598356167048" class="site-logo">
-        <h1 class="site-title">Prutekoi&#39;s blog</h1>
+      <a class="site-title-container" href="https://zhang-bokai.github.io">
+        <img src="https://zhang-bokai.github.io/images/avatar.png?v=1598356167048" class="site-logo">
+        <h1 class="site-title">zhang-bokai&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
         <div class="line"></div>
@@ -98,7 +98,7 @@
       
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://prutekoi.github.io/atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhang-bokai.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@ int main(){
     return 0;
 }
 </code></pre>
-<p>半平面交还是应该用凸包来理解。因为交出的一定是凸多边形，所以我们按照斜率排序之后维护这个凸包就行了。最初论文中的写法是分别求出上下凸包，然后合并时发现会有无用边<img src="https://prutekoi.github.io/post-images/1594258631672.png" alt="" loading="lazy"><br>
+<p>半平面交还是应该用凸包来理解。因为交出的一定是凸多边形，所以我们按照斜率排序之后维护这个凸包就行了。最初论文中的写法是分别求出上下凸包，然后合并时发现会有无用边<img src="https://zhang-bokai.github.io/post-images/1594258631672.png" alt="" loading="lazy"><br>
 于是需要互相更新一下去掉无用边。<br>
 而现在我们见到的算法是经过优化的，我们不再分别求上下凸包，而是整体求一遍。（我们设求凸包的顺序是从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">-\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span> 开始逆时针求的..）这样我们发现右上和右下的无用边已经被去掉了。然后我们只要在加入边的过程中顺便把左下（队列头）的无用边也顺便去掉，那么剩下的只有左上的无用边，只需最后用队头更新队尾即可。</p>
 <p>没见过半平面交可能会是无穷的题目。但是半平面交是空集的还是有可能的。上面这个代码如果是空集的话会输出nan QAQ。怎么判断是不是空集？当已经确定交集一定不是无穷之后，交集为空当且仅当最后队列中的元素小于等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>。<br>
@@ -285,7 +285,7 @@ int main(){
 }
 </code></pre>
 <p>至于*15是为什么？<br>
-<img src="https://prutekoi.github.io/post-images/1578889598167.png" alt="" loading="lazy"><br>
+<img src="https://zhang-bokai.github.io/post-images/1578889598167.png" alt="" loading="lazy"><br>
 大概是这样可以还原真实的误差（听说是实验结果？）这篇文章叫AdaptiveQuadProof。</p>
 <p>然后就有一个特别经典的例题：月下柠檬树<br>
 题意是有一棵树，它是好多台体和顶上的锥体堆起来的，给出月光的角度，求这棵树投影的面积。<br>
@@ -343,7 +343,7 @@ int main(){
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://prutekoi.github.io/post/dan-chun-xing/">
+                <a href="https://zhang-bokai.github.io/post/dan-chun-xing/">
                   <h3 class="post-title">
                     线性规划，单纯形和对偶问题
                   </h3>
@@ -391,9 +391,9 @@ var app = new Vue({
       var gitalk = new Gitalk({
         clientID: '7d25e626199673e220e3',
         clientSecret: '18275839c46c0e4e748c553c6a30d28aca3f634a',
-        repo: 'Prutekoi.github.io',
-        owner: 'Prutekoi',
-        admin: ['Prutekoi'],
+        repo: 'zhang-bokai.github.io',
+        owner: 'zhang-bokai',
+        admin: ['zhang-bokai'],
         id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
       })

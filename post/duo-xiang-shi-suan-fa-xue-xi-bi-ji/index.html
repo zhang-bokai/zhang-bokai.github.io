@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" >
 
-<title>多项式算法学习笔记 | Prutekoi&#39;s blog</title>
+<title>多项式算法学习笔记 | zhang-bokai&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://prutekoi.github.io/favicon.ico?v=1598356167048">
+<link rel="shortcut icon" href="https://zhang-bokai.github.io/favicon.ico?v=1598356167048">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://prutekoi.github.io/styles/main.css">
+<link rel="stylesheet" href="https://zhang-bokai.github.io/styles/main.css">
 
 
   
@@ -44,9 +44,9 @@
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
-      <a class="site-title-container" href="https://prutekoi.github.io">
-        <img src="https://prutekoi.github.io/images/avatar.png?v=1598356167048" class="site-logo">
-        <h1 class="site-title">Prutekoi&#39;s blog</h1>
+      <a class="site-title-container" href="https://zhang-bokai.github.io">
+        <img src="https://zhang-bokai.github.io/images/avatar.png?v=1598356167048" class="site-logo">
+        <h1 class="site-title">zhang-bokai&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
         <div class="line"></div>
@@ -98,7 +98,7 @@
       
     </div>
     <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://prutekoi.github.io/atom.xml" target="_blank">RSS</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zhang-bokai.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
@@ -134,7 +134,7 @@
 <p>有一个更优美且普适性更强的推法:多项式的牛顿迭代。<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>F</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>−</mo><mi>G</mi><mo>≡</mo><mn>0</mn><mspace></mspace><mspace width="0.4444444444444444em"/><mo>(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mspace width="0.3333333333333333em"/><msup><mi>x</mi><mi>n</mi></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">F^{-1}-G\equiv0\pmod{x^n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.4444444444444444em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>这个式子可以让我们想到求函数的零点,从而想到牛顿迭代。<br>
 一般地,若想求一个多项式F使得G这个函数取到零点,则<br>
-<img src="https://prutekoi.github.io/post-images/1575381109531.png" alt="" loading="lazy"><br>
+<img src="https://zhang-bokai.github.io/post-images/1575381109531.png" alt="" loading="lazy"><br>
 推导过程其实可以统统忘记,因为这就是一个牛顿迭代的形式。注意求导时是对F这个多项式整体求导,其他的已知的多项式等可以看成常数。这个与上面推导的结论是一样的,但是更加简单自然。<br>
 有一点要注意,对于求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>o</mi><mi>d</mi><mtext> </mtext><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">mod\ x^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">o</span><span class="mord mathdefault">d</span><span class="mspace"> </span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span> 的零点时用的导数也应是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>o</mi><mi>d</mi><mtext> </mtext><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">mod\ x^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">o</span><span class="mord mathdefault">d</span><span class="mspace"> </span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span> 意义下的。如<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">ln</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">n</span></span></span></span>,逆元等。</p>
 <pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
@@ -530,7 +530,7 @@ int main(){
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://prutekoi.github.io/post/csp-s2019-fan-pan-ji/">
+                <a href="https://zhang-bokai.github.io/post/csp-s2019-fan-pan-ji/">
                   <h3 class="post-title">
                     CSP-S2019翻盘记
                   </h3>
@@ -578,9 +578,9 @@ var app = new Vue({
       var gitalk = new Gitalk({
         clientID: '7d25e626199673e220e3',
         clientSecret: '18275839c46c0e4e748c553c6a30d28aca3f634a',
-        repo: 'Prutekoi.github.io',
-        owner: 'Prutekoi',
-        admin: ['Prutekoi'],
+        repo: 'zhang-bokai.github.io',
+        owner: 'zhang-bokai',
+        admin: ['zhang-bokai'],
         id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
       })
